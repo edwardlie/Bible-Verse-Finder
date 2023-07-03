@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD803C6F2A5322C000B00CA1 /* Bible_Verse_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD803C6E2A5322C000B00CA1 /* Bible_Verse_FinderApp.swift */; };
+		AD803C712A5322C000B00CA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD803C702A5322C000B00CA1 /* ContentView.swift */; };
+		AD803C732A5322C100B00CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD803C722A5322C100B00CA1 /* Assets.xcassets */; };
+		AD803C762A5322C100B00CA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD803C752A5322C100B00CA1 /* Preview Assets.xcassets */; };
+		AD803C782A5322C100B00CA1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD803C772A5322C100B00CA1 /* Persistence.swift */; };
+		AD803C7B2A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD803C792A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodeld */; };
+		AD803C862A5322C100B00CA1 /* Bible_Verse_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD803C852A5322C100B00CA1 /* Bible_Verse_FinderTests.swift */; };
+		AD803C902A5322C100B00CA1 /* Bible_Verse_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD803C8F2A5322C100B00CA1 /* Bible_Verse_FinderUITests.swift */; };
+		AD803C922A5322C100B00CA1 /* Bible_Verse_FinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD803C912A5322C100B00CA1 /* Bible_Verse_FinderUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD803C822A5322C100B00CA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD803C632A5322C000B00CA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD803C6A2A5322C000B00CA1;
+			remoteInfo = "Bible Verse Finder";
+		};
+		AD803C8C2A5322C100B00CA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD803C632A5322C000B00CA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD803C6A2A5322C000B00CA1;
+			remoteInfo = "Bible Verse Finder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD803C6B2A5322C000B00CA1 /* Bible Verse Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Verse Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD803C6E2A5322C000B00CA1 /* Bible_Verse_FinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_Verse_FinderApp.swift; sourceTree = "<group>"; };
+		AD803C702A5322C000B00CA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD803C722A5322C100B00CA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD803C752A5322C100B00CA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD803C772A5322C100B00CA1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AD803C7A2A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bible_Verse_Finder.xcdatamodel; sourceTree = "<group>"; };
+		AD803C7C2A5322C100B00CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD803C812A5322C100B00CA1 /* Bible Verse FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible Verse FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD803C852A5322C100B00CA1 /* Bible_Verse_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_Verse_FinderTests.swift; sourceTree = "<group>"; };
+		AD803C8B2A5322C100B00CA1 /* Bible Verse FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible Verse FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD803C8F2A5322C100B00CA1 /* Bible_Verse_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_Verse_FinderUITests.swift; sourceTree = "<group>"; };
+		AD803C912A5322C100B00CA1 /* Bible_Verse_FinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_Verse_FinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD803C682A5322C000B00CA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD803C7E2A5322C100B00CA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD803C882A5322C100B00CA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD803C622A5322C000B00CA1 = {
+			isa = PBXGroup;
+			children = (
+				AD803C6D2A5322C000B00CA1 /* Bible Verse Finder */,
+				AD803C842A5322C100B00CA1 /* Bible Verse FinderTests */,
+				AD803C8E2A5322C100B00CA1 /* Bible Verse FinderUITests */,
+				AD803C6C2A5322C000B00CA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD803C6C2A5322C000B00CA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD803C6B2A5322C000B00CA1 /* Bible Verse Finder.app */,
+				AD803C812A5322C100B00CA1 /* Bible Verse FinderTests.xctest */,
+				AD803C8B2A5322C100B00CA1 /* Bible Verse FinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD803C6D2A5322C000B00CA1 /* Bible Verse Finder */ = {
+			isa = PBXGroup;
+			children = (
+				AD803C6E2A5322C000B00CA1 /* Bible_Verse_FinderApp.swift */,
+				AD803C702A5322C000B00CA1 /* ContentView.swift */,
+				AD803C722A5322C100B00CA1 /* Assets.xcassets */,
+				AD803C772A5322C100B00CA1 /* Persistence.swift */,
+				AD803C7C2A5322C100B00CA1 /* Info.plist */,
+				AD803C792A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodeld */,
+				AD803C742A5322C100B00CA1 /* Preview Content */,
+			);
+			path = "Bible Verse Finder";
+			sourceTree = "<group>";
+		};
+		AD803C742A5322C100B00CA1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD803C752A5322C100B00CA1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD803C842A5322C100B00CA1 /* Bible Verse FinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD803C852A5322C100B00CA1 /* Bible_Verse_FinderTests.swift */,
+			);
+			path = "Bible Verse FinderTests";
+			sourceTree = "<group>";
+		};
+		AD803C8E2A5322C100B00CA1 /* Bible Verse FinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD803C8F2A5322C100B00CA1 /* Bible_Verse_FinderUITests.swift */,
+				AD803C912A5322C100B00CA1 /* Bible_Verse_FinderUITestsLaunchTests.swift */,
+			);
+			path = "Bible Verse FinderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD803C6A2A5322C000B00CA1 /* Bible Verse Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD803C952A5322C100B00CA1 /* Build configuration list for PBXNativeTarget "Bible Verse Finder" */;
+			buildPhases = (
+				AD803C672A5322C000B00CA1 /* Sources */,
+				AD803C682A5322C000B00CA1 /* Frameworks */,
+				AD803C692A5322C000B00CA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bible Verse Finder";
+			productName = "Bible Verse Finder";
+			productReference = AD803C6B2A5322C000B00CA1 /* Bible Verse Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD803C802A5322C100B00CA1 /* Bible Verse FinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD803C982A5322C100B00CA1 /* Build configuration list for PBXNativeTarget "Bible Verse FinderTests" */;
+			buildPhases = (
+				AD803C7D2A5322C100B00CA1 /* Sources */,
+				AD803C7E2A5322C100B00CA1 /* Frameworks */,
+				AD803C7F2A5322C100B00CA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD803C832A5322C100B00CA1 /* PBXTargetDependency */,
+			);
+			name = "Bible Verse FinderTests";
+			productName = "Bible Verse FinderTests";
+			productReference = AD803C812A5322C100B00CA1 /* Bible Verse FinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD803C8A2A5322C100B00CA1 /* Bible Verse FinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD803C9B2A5322C100B00CA1 /* Build configuration list for PBXNativeTarget "Bible Verse FinderUITests" */;
+			buildPhases = (
+				AD803C872A5322C100B00CA1 /* Sources */,
+				AD803C882A5322C100B00CA1 /* Frameworks */,
+				AD803C892A5322C100B00CA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD803C8D2A5322C100B00CA1 /* PBXTargetDependency */,
+			);
+			name = "Bible Verse FinderUITests";
+			productName = "Bible Verse FinderUITests";
+			productReference = AD803C8B2A5322C100B00CA1 /* Bible Verse FinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD803C632A5322C000B00CA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AD803C6A2A5322C000B00CA1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AD803C802A5322C100B00CA1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AD803C6A2A5322C000B00CA1;
+					};
+					AD803C8A2A5322C100B00CA1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AD803C6A2A5322C000B00CA1;
+					};
+				};
+			};
+			buildConfigurationList = AD803C662A5322C000B00CA1 /* Build configuration list for PBXProject "Bible Verse Finder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD803C622A5322C000B00CA1;
+			productRefGroup = AD803C6C2A5322C000B00CA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD803C6A2A5322C000B00CA1 /* Bible Verse Finder */,
+				AD803C802A5322C100B00CA1 /* Bible Verse FinderTests */,
+				AD803C8A2A5322C100B00CA1 /* Bible Verse FinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD803C692A5322C000B00CA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD803C762A5322C100B00CA1 /* Preview Assets.xcassets in Resources */,
+				AD803C732A5322C100B00CA1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD803C7F2A5322C100B00CA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD803C892A5322C100B00CA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD803C672A5322C000B00CA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD803C7B2A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodeld in Sources */,
+				AD803C782A5322C100B00CA1 /* Persistence.swift in Sources */,
+				AD803C712A5322C000B00CA1 /* ContentView.swift in Sources */,
+				AD803C6F2A5322C000B00CA1 /* Bible_Verse_FinderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD803C7D2A5322C100B00CA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD803C862A5322C100B00CA1 /* Bible_Verse_FinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD803C872A5322C100B00CA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD803C902A5322C100B00CA1 /* Bible_Verse_FinderUITests.swift in Sources */,
+				AD803C922A5322C100B00CA1 /* Bible_Verse_FinderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD803C832A5322C100B00CA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD803C6A2A5322C000B00CA1 /* Bible Verse Finder */;
+			targetProxy = AD803C822A5322C100B00CA1 /* PBXContainerItemProxy */;
+		};
+		AD803C8D2A5322C100B00CA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD803C6A2A5322C000B00CA1 /* Bible Verse Finder */;
+			targetProxy = AD803C8C2A5322C100B00CA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD803C932A5322C100B00CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD803C942A5322C100B00CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD803C962A5322C100B00CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bible Verse Finder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edward-Lie.Bible-Verse-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD803C972A5322C100B00CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bible Verse Finder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edward-Lie.Bible-Verse-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD803C992A5322C100B00CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edward-Lie.Bible-Verse-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Verse Finder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Verse Finder";
+			};
+			name = Debug;
+		};
+		AD803C9A2A5322C100B00CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edward-Lie.Bible-Verse-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Verse Finder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Verse Finder";
+			};
+			name = Release;
+		};
+		AD803C9C2A5322C100B00CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edward-Lie.Bible-Verse-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bible Verse Finder";
+			};
+			name = Debug;
+		};
+		AD803C9D2A5322C100B00CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edward-Lie.Bible-Verse-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bible Verse Finder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD803C662A5322C000B00CA1 /* Build configuration list for PBXProject "Bible Verse Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD803C932A5322C100B00CA1 /* Debug */,
+				AD803C942A5322C100B00CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD803C952A5322C100B00CA1 /* Build configuration list for PBXNativeTarget "Bible Verse Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD803C962A5322C100B00CA1 /* Debug */,
+				AD803C972A5322C100B00CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD803C982A5322C100B00CA1 /* Build configuration list for PBXNativeTarget "Bible Verse FinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD803C992A5322C100B00CA1 /* Debug */,
+				AD803C9A2A5322C100B00CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD803C9B2A5322C100B00CA1 /* Build configuration list for PBXNativeTarget "Bible Verse FinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD803C9C2A5322C100B00CA1 /* Debug */,
+				AD803C9D2A5322C100B00CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD803C792A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD803C7A2A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodel */,
+			);
+			currentVersion = AD803C7A2A5322C100B00CA1 /* Bible_Verse_Finder.xcdatamodel */;
+			path = Bible_Verse_Finder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD803C632A5322C000B00CA1 /* Project object */;
+}
