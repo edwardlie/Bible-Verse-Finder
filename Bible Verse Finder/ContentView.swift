@@ -2,87 +2,117 @@
 //  ContentView.swift
 //  Bible Verse Finder
 //
-//  Created by Edward Lie on 7/3/23.
+//  Created by Edward Lie
 //
+//  Created by Edward Lie on 7/4/23.
 
 import SwiftUI
 import CoreData
+import Combine
 
-struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
+struct SearchBar: UIViewRepresentable {
+    typealias UIViewTYpe = UISearchBar
+    @Binding var searchTerm: String
+    
+    func makeUIView(context: Context) -> UISearchBar {
+        let searchBar = UISearchBar(frame: .zero)
+        searchBar.delegate = context.coordinator
+        searchBar.searchBarStyle = .minimal
+        searchBar.placeholder = "Type verse(s)..."
+        return searchBar
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+    
+    func updateUIView(_ uiView: UISearchBar, context: Context) {
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+    
+    func makeCoordinator() -> SearchBarCoordinator {
+        return SearchBarCoordinator(searchTerm: $searchTerm)
+    }
+    
+    class SearchBarCoordinator: NSObject, UISearchBarDelegate {
+        @Binding var searchTerm: String
+        
+        init(searchTerm: Binding<String>) {
+            self._searchTerm = searchTerm
+        }
+        
+        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            searchTerm = searchBar.text ?? ""
+            UIApplication.shared.windows.first { $0.isKeyWindow }?.endEditing(true)
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+struct ContentView: View {
+    @ObservedObject var viewModel: VerseListViewModel
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<Item>
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                SearchBar(searchTerm: $viewModel.searchTerm)
+                if viewModel.verses.isEmpty {
+                    EmptyStateView()
+                } else {
+                    List(viewModel.verses) { verse in
+                        VerseView(data: verse)
+                    }
+                    .listStyle(PlainListStyle())
+                }
+            }
+            VerseListView()
+        }
+        .navigationBarTitle("Bible Verses")
+    }
+}
+
+struct EmptyStateView: View {
+    var body: some View {
+        VStack {
+            Spacer()
+            Image(systemName: "magnifyingglass")
+                .font(.system(size: 85))
+                .padding(.bottom)
+            Text("Start searching for verses...")
+                .font(.title)
+            Spacer()
+        }
+        .padding()
+        .foregroundColor(Color(.systemIndigo))
+    }
+}
+
+struct VerseView: View {
+    var data: VerseViewModel
+    
+    var body: some View {
+        HStack {
+            Text(data.ref)
+            VStack(alignment: .leading) {
+                Text(data.text)
+                    .font(.headline)
+            }
+            .padding()
+        }
+        .padding()
+    }
+}
+
+struct VerseListView: View {
+    var body: some View {
+        List {
+        }
+        .navigationTitle(Text("Bible Verses"))
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView(viewModel: VerseListViewModel()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
