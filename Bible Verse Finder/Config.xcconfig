@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  Bible Verse Finder
+//
+//  Created by Edward Lie on 5/8/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+API_KEY = ios_5c95c579-dd75-4516-9bc1-e7e94d697f82

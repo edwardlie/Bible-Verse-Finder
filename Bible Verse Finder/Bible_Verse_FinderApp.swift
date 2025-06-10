@@ -11,14 +11,13 @@ import Firebase
 @main
 struct Bible_Verse_FinderApp: App {
     // register app delegate for Firebase setup
-      @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-    let persistenceController = PersistenceController.shared
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: VerseListViewModel())
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView()
+//            ContentView(viewModel: VerseListViewModel())
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
